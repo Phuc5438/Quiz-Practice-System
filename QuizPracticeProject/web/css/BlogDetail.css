@@ -1,0 +1,107 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 23, 2023, 10:04:20 AM
+    Author     : ACER
+*/
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+
+}
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+.content{
+    text-indent: 2em;
+    text-align: justify;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0B5ED7;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.custom-button:hover {
+    background-color: #0645a1;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-container h1 {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.header-container h2:first-child {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.header-container-right{
+    display: flex;
+    /*align-items: center;*/
+}
+.author-value-container {
+    margin-left: auto;
+}
+
+.author-label, .author-value {
+    margin-bottom: 0;
+}
+
+.blogAtribute{
+    text-decoration: none;
+    font-style: italic;
+}
+.eye-icon {
+    color: red;
+}

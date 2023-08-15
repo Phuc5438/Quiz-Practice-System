@@ -1,0 +1,246 @@
+@keyframes multicolor-blink {
+    0% {
+        color: red;
+    }
+    25% {
+        color: green;
+    }
+    50% {
+        color: blue;
+    }
+    75% {
+        color: orange;
+    }
+    100% {
+        color: purple;
+    }
+}
+
+.multicolor-blink {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    margin: 10px;
+    color: gold;
+    animation: multicolor-blink 2s infinite;
+}
+
+.registerButton a {
+    text-decoration: none;
+    
+    position: absolute;
+    right: 5px;
+    margin: 10px;
+    background-color: #11ab2d;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registerButton button{
+    position: absolute;
+    right: 5px;
+    margin: 10px;
+    background-color: #11ab2d;
+    width: 150px;
+    height: 50px;
+}
+
+.alreadyRegistedButton button {
+    position: absolute;
+    right: 5px;
+    margin: 10px;
+    background-color: #999797;
+    width: 150px;
+    height: 50px;
+    color: #ffffff;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+.filterTable{
+    display: grid;
+    text-align: center
+}
+
+.subjectListButton {
+    background-color: #76e3da; /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Kích thước padding */
+    border: none; /* Không có viền */
+    border-radius: 4px; /* Bo góc */
+    text-align: center; /* Căn giữa nội dung */
+    text-decoration: none; /* Không gạch chân */
+    display: inline-block; /* Hiển thị inline */
+    font-size: 16px; /* Cỡ chữ */
+    cursor: pointer; /* Con trỏ khi hover */
+}
+
+.subjectListButton:hover {
+    background-color: #459da0; /* Màu nền hover */
+}
+
+.searchBox {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: inline-flex;
+    max-width: 400px;
+}
+
+.form-control {
+    flex: 1;
+    border-radius: 5px 0 0 5px;
+}
+
+.btn {
+    border-radius: 0 5px 5px 0;
+}
+
+.modal_popUp2 {
+    display: none; /* Ẩn ban đầu */
+    position: fixed; /* Cố định vị trí */
+    z-index: 999999; /* Hiển thị trên các phần tử khác */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*    overflow: auto;*/
+    background-color: rgba(0, 0, 0, 0.4); /* Màu nền mờ */
+}
+
+.modal-content_popUp2 {
+    background-color: #fefefe;
+    margin:auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px; /*thay đổi cái chiều rộng ở đây */
+}
+
+.dialog{
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 9999999;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity:0;
+    transition: opacity linear 0.2s;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.dialog-body{
+    height:700px;
+    width:750px;
+    position: absolute;
+    padding:16px;
+    background-color: #fff;
+}
+
+.header_fixed {
+    max-height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+
+.dialog-body img{
+    width:200px;
+    height:200px;
+}
+.dialog-body button{
+
+    position:relative;
+    display:inline-block;
+    padding:10px 20px;
+    margin:10px 0;
+    color:#fff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:18px;
+    letter-spacing: 2px;
+    border-radius:40px;
+    background: linear-gradient(90deg,#755bea,#ff72c0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #f8f8f8;
+    margin: 15% auto; /* Adjust the percentage to position the dialog vertically */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    max-width: 30%;
+    text-align: center;
+    position: relative; /* Add relative positioning */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  transition: opacity 0.5s;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#progressBar {
+  height: 5px;
+  background-color: #fff;
+  margin-top: 5px;
+  transition: width 0.5s;
+}
+
+.edit-subjectRegister{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.edit-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 750px; /* Could be more or less, depending on screen size */
+    height: 700px;
+}
